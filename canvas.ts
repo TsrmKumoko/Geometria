@@ -276,8 +276,6 @@ canvas.ontouchmove = function (ev: TouchEvent) {
 canvas.ontouchend = function (ev: TouchEvent) {
     ev.preventDefault()
     canvas.width = canvas.width // reset the canvas
-    // let eventOffsetX = (ev.touches[0].clientX - canvas.offsetLeft) * pixelRatio
-    // let eventOffsetY = (ev.touches[0].clientY - canvas.offsetTop) * pixelRatio
     endX = (touchOffsetX - originX) / scale
     endY = (touchOffsetY - originY) / scale
     if (currentTool == "Drag" || currentTool == "Null") {
