@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Geometria</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1 id="test"></h1>
+        <div class="toolbox">
+            <button class="tool" id="Line" onclick="toggleButtonBG(this.id)">Line</button>
+            <button class="tool" id="Rect" onclick="toggleButtonBG(this.id)">Rect</button>
+            <button class="tool" id="Circle" onclick="toggleButtonBG(this.id)">Circle</button>
+            <button class="tool" id="Drag" onclick="toggleButtonBG(this.id)">Drag</button>
+            <button class="tool" id="Scale" onclick="toggleButtonBG(this.id)">Scale</button>
+        </div>
+        <div class="toolbox">
+            <button class="oneTime" id="Reset" onclick="resetCoor()">Reset</button>
+            <button class="oneTime" id="Clear" onclick="clearAllStrokes()">Clear</button>
+            <button class="oneTime" id="Undo" onclick="undoStroke()">Undo</button>
+            <button class="oneTime" id="Redo" onclick="redoStroke()">Redo</button>
+        </div>
+        <canvas id="canvas"></canvas>
+        <script src="canvas.js"></script>
+    </body>
+</html>
