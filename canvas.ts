@@ -43,10 +43,10 @@ function resizeInterface() {
     heightPast = height
     width = document.documentElement.clientWidth
     height = document.documentElement.clientHeight
-    canvas.width = (width - 100) * pixelRatio
-    canvas.height = (height - 170) * pixelRatio
-    canvas.style.width = width - 100 + "px"
-    canvas.style.height = height - 170 + "px"
+    canvas.width = (width - 0) * pixelRatio
+    canvas.height = (height - 0) * pixelRatio
+    canvas.style.width = width - 0 + "px"
+    canvas.style.height = height - 0 + "px"
     redraw()
 }
 window.addEventListener("resize", resizeInterface)
