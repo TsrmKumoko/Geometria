@@ -379,14 +379,14 @@ function redoStroke() {
 function showTools() {
     document.getElementById("basicTools").style.display = "flex";
     document.getElementById("ctrlTools").style.display = "flex";
-    document.getElementById("hideTools").style.display = "flex";
-    document.getElementById("showTools").style.display = "none";
+    document.getElementById("hideToolsBtn").style.display = "flex";
+    document.getElementById("showToolsBtn").style.display = "none";
 }
 function hideTools() {
     document.getElementById("basicTools").style.display = "none";
     document.getElementById("ctrlTools").style.display = "none";
-    document.getElementById("hideTools").style.display = "none";
-    document.getElementById("showTools").style.display = "flex";
+    document.getElementById("hideToolsBtn").style.display = "none";
+    document.getElementById("showToolsBtn").style.display = "flex";
 }
 // Hotkeys
 const availableKeys = ["Meta", "Shift", "z"];
