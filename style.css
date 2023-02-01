@@ -10,9 +10,9 @@ body {
 
 .container {
     display: flex;
-    
     flex-grow: 1;
     justify-content: left;
+    transition-duration: 0.3s;
 }
 
 #tools {
@@ -30,6 +30,7 @@ body {
     border-radius: 30px;
     margin-right: 6px;
     margin-bottom: 6px;
+    transition-duration: 0.4s;
 }
 
 .tool {
@@ -74,7 +75,59 @@ body {
     margin-right: 12px;
 }
 
-#HideTools {
+.displayTools {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: steelblue;
+    border: 2px solid whitesmoke;
+    background-color: whitesmoke;
+    border-radius: 6px;
+    width: fit-content;
+    height: 30px;
+    font-size: small;
+    transition-duration: 0.3s;
+}
+
+#showTools {
+    display: none;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    transition-duration: 0.3s;
+}
+
+#showTools:hover {
+    transition-duration: 0.3s;
+    width: fit-content;
+    padding-right: 18px;
+}
+
+#showTools::after {
+    content: "»";
+    font-size: large;
+    width: fit-content;
+    position: absolute;
+    padding-left: 30px;
+    padding-bottom: 1px;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+#showTools:hover::after {
+    content: "»";
+    font-size: large;
+    width: fit-content;
+    position: absolute;
+    padding-left: 34px;
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
+#hideTools {
     font-size: large;
     padding-left: 11px;
     padding-bottom: 4px;
@@ -85,15 +138,22 @@ body {
     border-width: 0px;
 }
 
-/* .tool:hover {
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.24), 0 5px 20px 0 rgba(0,0,0,0.19);
-} */
+#hideTool:active {
+    color: steelblue;
+    background-color: whitesmoke;
+    transition: 0s;
+}
+
+#hideTools:hover {
+    color: whitesmoke;
+    background-color: steelblue;
+}
 
 .oneTime {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 50px;
+    width: fit-content;
     height: 30px;
     margin-top: 2px;
     margin-bottom: 2px;
@@ -104,10 +164,6 @@ body {
     background-color: whitesmoke;
     transition-duration: 0.3s;
 }
-
-/* .oneTime:hover {
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.24), 0 5px 20px 0 rgba(0,0,0,0.19);
-} */
 
 .oneTime:active {
     color: whitesmoke;
