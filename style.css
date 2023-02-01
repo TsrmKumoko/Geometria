@@ -92,7 +92,7 @@ body {
     transition-duration: 0.3s;
 }
 
-#showTools {
+#showToolsBtn {
     display: none;
 
     margin-left: 10px;
@@ -100,13 +100,13 @@ body {
     transition-duration: 0.3s;
 }
 
-#showTools:hover {
+#showToolsBtn:hover {
     transition-duration: 0.3s;
     width: fit-content;
     padding-right: 18px;
 }
 
-#showTools::after {
+#showToolsBtn::after {
     content: "»";
     font-size: large;
     width: fit-content;
@@ -117,7 +117,7 @@ body {
     transition-duration: 0.3s;
 }
 
-#showTools:hover::after {
+#showToolsBtn:hover::after {
     content: "»";
     font-size: large;
     width: fit-content;
@@ -127,7 +127,7 @@ body {
     transition-duration: 0.3s;
 }
 
-#hideTools {
+#hideToolsBtn {
     font-size: large;
     padding-left: 11px;
     padding-bottom: 4px;
@@ -138,13 +138,13 @@ body {
     border-width: 0px;
 }
 
-#hideTool:active {
+#hideToolBtn:active {
     color: steelblue;
     background-color: whitesmoke;
     transition: 0s;
 }
 
-#hideTools:hover {
+#hideToolsBtn:hover {
     color: whitesmoke;
     background-color: steelblue;
 }
