@@ -8,22 +8,23 @@
     <body>
         <canvas id="canvas"></canvas>
         <div class="container">
-            <div class="block", id="tools">
-                <div class="toolbox">
+            <div class="block" id="tools">
+                <div class="toolbox" id="basicTools">
                     <button class="tool" id="Line" onclick="toggleButtonBG(this.id)">Line</button>
                     <button class="tool" id="Rect" onclick="toggleButtonBG(this.id)">Rect</button>
                     <button class="tool" id="Circle" onclick="toggleButtonBG(this.id)">Circle</button>
                     <button class="tool" id="Drag" onclick="toggleButtonBG(this.id)">Drag</button>
                     <button class="tool" id="Scale" onclick="toggleButtonBG(this.id)">Scale</button>
                 </div>
-                <div class="toolbox">
+                <div class="toolbox" id="ctrlTools">
                     <button class="oneTime" id="Reset" onclick="resetCoor()">Reset</button>
                     <button class="oneTime" id="Clear" onclick="clearAllStrokes()">Clear</button>
                     <button class="oneTime" id="Undo" onclick="undoStroke()">⟲</button>
                     <button class="oneTime" id="Redo" onclick="redoStroke()">⟳</button>
                 </div>
                 <div class="toolbox">
-                    <button class="oneTime" id="HideTools">«</button>
+                    <button class="displayTools" id="showTools" onclick="showTools()">Tools</button>
+                    <button class="displayTools" id="hideTools" onclick="hideTools()">«</button>
                 </div>
             </div>
         </div>
