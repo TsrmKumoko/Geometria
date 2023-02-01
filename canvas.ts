@@ -155,6 +155,7 @@ function drawCoor() {
     pen!.strokeStyle = "black"
 }
 
+// Mouse Events
 canvas.onmousedown = function (ev: MouseEvent) {
     let eventOffsetX = ev.offsetX * pixelRatio
     let eventOffsetY = ev.offsetY * pixelRatio
@@ -371,6 +372,20 @@ function redoStroke() {
         canvas.width = canvas.width
         redraw()
     }
+}
+
+function showTools() {
+    document.getElementById("basicTools")!.style.display = "flex"
+    document.getElementById("ctrlTools")!.style.display = "flex"
+    document.getElementById("hideTools")!.style.display = "flex"
+    document.getElementById("showTools")!.style.display = "none"
+}
+
+function hideTools() {
+    document.getElementById("basicTools")!.style.display = "none"
+    document.getElementById("ctrlTools")!.style.display = "none"
+    document.getElementById("hideTools")!.style.display = "none"
+    document.getElementById("showTools")!.style.display = "flex"
 }
 
 // Hotkeys
